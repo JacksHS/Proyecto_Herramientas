@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=1600') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-container {
+    background: rgba(20, 20, 20, 0.85);
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    border-top: 4px solid #e74c3c; /* Detalle rojo arriba */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.register-form h2 {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.register-form h2 span {
+    color: #e74c3c;
+}
+
+.register-form p {
+    color: #888;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    color: #bbb;
+    margin-bottom: 5px;
+    font-size: 0.85rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    background: #2a2a2a;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #e74c3c;
+}
+
+.btn-register {
+    width: 100%;
+    padding: 12px;
+    background: #e74c3c;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn-register:hover {
+    background: #c0392b;
+}
+
+.switch-text {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #fff !important;
+}
+
+.switch-text a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.switch-text a:hover {
+    text-decoration: underline;
+}
+
+.message {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    min-height: 20px;
+}

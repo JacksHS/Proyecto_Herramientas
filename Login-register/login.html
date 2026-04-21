@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoElite - Iniciar Sesión</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <form id="loginForm" class="login-form">
+            <h2>AUTO<span>ELITE</span></h2>
+            <p>Acceso al Panel de Control</p>
+            
+            <div class="input-group">
+                <label for="username">Usuario</label>
+                <input type="text" id="username" placeholder="Ingrese su usuario" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" placeholder="••••••••" required>
+            </div>
+
+            <button type="submit" class="btn-login">Ingresar</button>
+            <p id="message" class="error-msg"></p>
+        </form>
+    </div>
+
+    <script>
+        // Credenciales de muestra
+        const USER_AUTH = "admin";
+        const PASS_AUTH = "12345";
+
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const user = document.getElementById('username').value;
+            const pass = document.getElementById('password').value;
+            const message = document.getElementById('message');
+
+            if (user === USER_AUTH && pass === PASS_AUTH) {
+                message.style.color = "#2ecc71";
+                message.textContent = "Acceso concedido. Redirigiendo...";
+                setTimeout(() => {
+                    window.location.href = "../index.html"; // Redirige al inicio
+                }, 1500);
+            } else {
+                message.style.color = "#e74c3c";
+                message.textContent = "Usuario o contraseña incorrectos.";
+            }
+        });
+    </script>
+</body>
+</html>
