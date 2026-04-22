@@ -1,0 +1,36 @@
+footer {
+    background: #0a0a0f;
+    color: #00f7ff;
+    text-align: center;
+    padding: 25px 20px;
+    border-top: 2px solid #00f7ff33;
+    box-shadow: 0 -2px 15px #00f7ff22;
+}
+
+/* Título */
+footer h3 {
+    margin-bottom: 10px;
+    color: #ff00ff;
+    text-shadow: 0 0 8px #ff00ff;
+}
+
+/* Texto */
+footer p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #a0faff;
+}
+
+/* Links */
+footer .footer-links a {
+    color: #00f7ff;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+footer .footer-links a:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+}
