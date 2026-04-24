@@ -15,13 +15,17 @@
     font-family: "Inter", sans-serif;
 }
 
+body {
+    background: #0a0a0f;
+}
+
 .navbar {
     display: flex;
     align-items: center;
     padding: 0 40px;
     height: 72px;
-    background: var(--bg-dark);
-    gap: 30px; /* Espaciado base */
+    background: #0a0a0f;
+    gap: 25px;
 }
 
 /* 1. LOGO: Se queda a la izquierda */
@@ -30,18 +34,38 @@
     font-weight: 800;
     color: #fff;
     letter-spacing: -0.5px;
+    white-space: nowrap;
 }
 
-/* 2. BUSCADOR: Ahora empuja a los demás y se estira hacia la derecha */
+/* 2. LINKS DE NAVEGACIÓN */
+.nav-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #94a3b8;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+
+/* 3. BUSCADOR: En el centro */
 .search-box {
     display: flex;
     align-items: center;
-    flex: 1;                /* Se expande para ocupar el espacio sobrante */
-    max-width: 450px;       /* Limita qué tan largo puede ser */
-    margin-left: auto;      /* 🔥 El truco: empuja al buscador a la derecha del logo */
-    margin-right: 40px;     /* Separa el buscador de los links */
-    
-    background: var(--bg-input);
+    flex: 1;
+    max-width: 400px;
+    margin: 0 20px;
+    background: #1e293b;
     border-radius: 10px;
     padding: 4px;
 }
@@ -56,7 +80,7 @@
 }
 
 .search-box button {
-    background: var(--accent);
+    background: #3b82f6;
     border: none;
     padding: 8px 14px;
     border-radius: 8px;
@@ -64,43 +88,22 @@
     color: #fff;
 }
 
-/* 3. CONTENEDOR DE LINKS Y ACCIONES: Juntos a la derecha */
-.nav-right-group {
-    display: flex;
-    align-items: center;
-    gap: 30px; /* Espacio entre la lista y el botón de login */
-}
-
-.nav-links {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--text-muted);
-    font-size: 14px;
-    transition: var(--transition);
-}
-
-.nav-links a:hover {
-    color: #fff;
-}
-
 /* 4. BOTÓN INICIAR SESIÓN */
+.nav-actions {
+    margin-left: auto;
+}
+
 .login {
     color: #fff;
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
-    padding: 10px 18px;
+    padding: 8px 16px;
+    border: 1px solid #3b82f6;
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    white-space: nowrap; /* Evita que el texto se rompa en dos líneas */
+    transition: all 0.3s ease;
 }
 
 .login:hover {
-    background: rgba(255, 255, 255, 0.15);
+    background: #3b82f6;
 }
