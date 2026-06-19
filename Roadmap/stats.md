@@ -1,6 +1,6 @@
 # Estadísticas del Proyecto - AutoMarket Perú
 
-**Generado:** 2026-06-19 13:55:57
+**Generado:** 2026-06-19 19:09:39
 
 ---
 
@@ -18,12 +18,12 @@
 
 | Archivo | Líneas |
 |--------|-------|
-| Login-register\login.css | 97 |
-| Login-register\login.html | 59 |
-| Login-register\register.css | 107 |
-| Login-register\register.html | 54 |
+| Login-register/login.css | 97 |
+| Login-register/login.html | 59 |
+| Login-register/register.css | 107 |
+| Login-register/register.html | 54 |
 | footer.css | 44 |
 | index.html | 132 |
-| main\daniel.css | 81 |
-| navbar\navbar.css | 109 |
+| main/daniel.css | 81 |
+| navbar/navbar.css | 109 |
 | styles.css | 25 |
